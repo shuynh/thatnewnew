@@ -57,7 +57,7 @@ font-size:14px;
 }
 
 #bg-image {
-  background: url('/img/skifree.png') repeat;
+  background: url('../img/skifree.png') repeat;
   min-width: 200%;
   min-height: 200%;
   position:absolute;
