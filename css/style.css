@@ -18,10 +18,10 @@ font-size:14px;
   -o-animation-name: sliderdude;
   animation-name: sliderdude;
 
-  -webkit-animation-duration: 3s;
-  -moz-animation-duration: 3s;
-  -o-animation-duration: 3s;
-  animation-duration: 3s;
+  -webkit-animation-duration: 6s;
+  -moz-animation-duration: 6s;
+  -o-animation-duration: 6s;
+  animation-duration: 6s;
 
   -webkit-animation-iteration-count: infinite;
   -moz-animation-iteration-count: infinite;
