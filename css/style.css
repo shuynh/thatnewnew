@@ -2,21 +2,66 @@ h1 {
 font-size:14px;
 }
 
-#bg-image {                                                                                       
-    position: fixed;                                                                              
-    width: 100%;                                                                                  
-    height: 100%;                                                                                 
-}                                                                                                 
+.wrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  clear:both;
+  overflow: hidden;
+}
 
-#bg-image img {                                                                                   
-    position: static;                                                                           
-    top: 0;                                                                                       
-    left: 0;                                                                                      
-    right: 0;                                                                                     
-    bottom: 0;                                                                                    
-    margin: auto;                                                                                 
-    min-width: 50%;                                                                               
-    min-height: 50%;                                                                              
+#bg-image.sliding {
+  -webkit-animation-name: sliderdude;
+  -moz-animation-name: sliderdude;
+  -o-animation-name: sliderdude;
+  animation-name: sliderdude;
+
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  -o-animation-duration: 3s;
+  animation-duration: 3s;
+
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+
+   -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes sliderdude {
+
+ from {
+    margin-top:-1003px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+
+}
+@keyframes sliderdude {
+
+ from {
+    margin-top:-1003px;
+  }
+
+  to {
+    margin-top: 0px;
+  }
+}
+
+#bg-image {
+  background: url('/img/skifree.png') repeat;
+  min-width: 200%;
+  min-height: 200%;
+  position:absolute;
+  margin-top: -1003px;
 }
 
 .github {
@@ -41,10 +86,10 @@ font-size:14px;
   position:absolute;
   left:478px;
   top:522px;
-} 
+}
 
 .email {
   position:absolute;
   left:866px;
   top:310px;
-} 
+}
